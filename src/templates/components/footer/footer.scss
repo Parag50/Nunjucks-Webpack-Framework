@@ -1,0 +1,71 @@
+.footer-background {
+    background-color: $tertiary-color; // Set the background color of footer
+}
+
+.footer-main{
+    @extend .footer-background;
+    @extend .py-5;
+    @extend .text-white;
+}
+
+.footer-container{
+    @extend .container;
+}
+
+.footer-row{
+    @extend .row;
+    @extend .g-4;
+}
+
+.col-address{
+    @extend .col-lg-3; 
+}
+
+.bottom-margin-0{
+    @extend .mb-0;
+    @extend .list-unstyled;
+}
+
+.footer-text-styles{
+    @extend .h6;
+    @extend .fw-light;
+    @extend .ms-2;
+}
+
+.right-bottom-image{
+    width: 83px;
+    height: auto;
+}
+
+.col-address-6{
+    @extend .col-lg-9;
+}
+
+.row-gap-4{
+    @extend .row;
+    @extend .g-4;
+}
+
+.cal-address-6-margin-down-4{
+    @extend .col-6;
+    @extend .col-md-4;
+}
+
+.nav-link-white{
+    @extend .nav-link;
+    @extend .text-white;
+}
+
+.nav-item-footer{
+    width: 50%;
+}
+
+.footer-copy-right{
+    @extend .d-flex;
+    @extend .justify-content-between;
+}
+
+.nav-flex-column{
+    @extend .nav;
+    @extend .flex-column;
+}

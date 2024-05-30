@@ -1,0 +1,69 @@
+@mixin full-width-container {
+    @extend .container-fluid;
+}
+
+.full-width-container-yellow {
+    @include full-width-container;
+    background-color: $secondary-color;
+}
+
+.full-width-container-orange {
+    @include full-width-container;
+    background-color: $orange-color;
+}
+
+.row-image-text {
+    @extend .row;
+    @extend .p-md-5;
+    @extend .pb-3;
+}
+
+.image-text-title {
+    font-weight: 600;
+}
+
+.col-two-image-text-img {
+    max-height: 90vh; 
+   
+}
+
+
+.col-image-text {
+    @extend .col-md-6;
+    @extend .p-5;
+}
+
+.col-two-image-text {
+    @extend .col-md-6;
+    @extend .p-0;
+}
+
+.col-two-image-text-img {
+    @extend .img-fluid;
+}
+
+.button-link {
+    padding: 10px 20px;
+    background-color: $secondary-color;
+    color: $black-color;
+    text-decoration: none;
+    border: 2px solid $black-color;
+    border-radius: 6.25rem;
+    transition: border-color 0.3s ease, color 0.3s ease;
+
+    /* Center the text vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Maximum width */
+    max-width: 10rem;
+    /* You can adjust this value as needed */
+}
+
+.button-link:hover {
+    border-color: $orange-color;
+    /* Border color on hover */
+    color: $orange-color;
+    /* Text color on hover */
+}

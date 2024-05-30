@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nunjucks Webpack Framework</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;600&display=swap" rel="stylesheet">
+        <!-- Add your CSS and JavaScript files here -->
+        <link rel="stylesheet" href="././styles/main.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <!-- Include the header component (assuming it's a Nunjucks template) -->
+            {% include "src/templates/components/header/header.njk" %}
+            <!-- Define a block for the hero section -->
+            {% block hero %}{% endblock %}
+        </header>
+
+        <main id="main">
+            {# {% include "src/templates/components/2-Col-Text-Image/2-Col-Text-Image.njk" %} #}
+            <!-- Define a block for the main content -->
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <!-- Add your footer content here -->
+            {% include "src/templates/components/footer/footer.njk" %}
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,21 @@
+{% macro imageAndText(params) %}
+  <div class="full-width-container-yellow">
+    <div class="row-image-text">
+      <div class="col-image-text">
+        <h2 class="image-text-title">{{ params.title }}</h2>
+        <div class="rich-text">
+          <p>
+            {{ params.content }}
+          </p>
+        </div>
+
+        {# <a href="{{ params.linkUrl }}" class="button-link">{{ params.linkText }}</a> #}
+        <a href="{{ params.linkUrl }}" class="button-link">Find out more</a>
+
+      </div>
+      <div class="col-two-image-text">
+        <img src="{{ params.imageUrl }}" class="col-two-image-text-img" alt="{{ params.imageAlt }}">
+      </div>
+    </div>
+  </div>
+{% endmacro %}

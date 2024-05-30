@@ -1,0 +1,90 @@
+.navbar-head {
+  background-color: $primary-color;
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+}
+
+.container-head {
+  @extend .container-lg;
+}
+
+.nav-brand-head {
+  @extend .navbar-brand;
+}
+
+.nav-toggler-head {
+  @extend .navbar-toggler;
+}
+
+.nav-toggler-icon {
+  @extend .navbar-toggler-icon;
+}
+
+.nav-collapse {
+  @extend .collapse;
+  @extend .navbar-collapse;
+  @extend .justify-content-end;
+}
+
+.navbar-navs {
+  @extend .navbar-nav;
+}
+
+.nav-item-head {
+  @extend .nav-item;
+}
+
+.nav-link-head {
+  // @extend .nav-link; // Extend the Bootstrap .nav-link styles if needed
+  color: $tertiary-color ;
+  font-weight: $font-weight-600 ;
+  line-height: $line-height-text;
+  @extend .text-decoration-none;
+  @extend .mx-3;
+}
+
+/* Default styling for all screen sizes */
+.nav-link-head-btn {
+  color: $tertiary-color;
+  font-weight: $font-weight-600;
+  line-height: $line-height-text;
+  color: $tertiary-color;
+  border-radius: $border-radius-btn;
+  padding: $padding-btn;
+  @extend .text-decoration-none;
+  margin-top: 10px;
+  /* Add margin on top */
+  margin-bottom: 10px;
+  /* Add margin on bottom */
+}
+
+/* Add hover effect only on desktop */
+@media (min-width: 768px) {
+  .nav-link-head-btn {
+    background-color: $secondary-color;
+  }
+
+  .nav-link-head-btn:hover {
+    border-radius: $border-radius-btn;
+    padding: $padding-btn;
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    transition: background-color 1s ease;
+ 
+  }
+}
+
+/* Mobile-specific styling */
+@media (max-width: 991px) {
+  .nav-link-head-btn {
+    background-color: transparent;
+    /* Remove background color */
+    padding: initial;
+    /* Reset padding to its default value */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+  }
+}
+
+
