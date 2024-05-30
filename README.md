@@ -22,14 +22,14 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/gorilla-gorilla.git
+   git clone https://github.com/yourusername/Nunjucks Webpack Framework.git
    ```
 
 ````
 
 2. **Navigate to the project directory:**
    ```sh
-   cd gorilla-gorilla-ui-ff9ad6110a8f8fd050a83e615f47a208d9bae9d0
+   cd Nunjucks Webpack Framework-ui-ff9ad6110a8f8fd050a83e615f47a208d9bae9d0
    ```
 3. **Install the dependencies:**
    ```sh
